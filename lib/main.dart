@@ -79,7 +79,7 @@ class _ParkingTrackerState extends State<ParkingTracker> {
                             size: 54,
                           ),
                           Text(
-                            'Check as a Guest',
+                            'Check as a User',
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 16,
