@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import './home_screen.dart';
 
@@ -22,8 +24,8 @@ class _ParkingTrackerState extends State<ParkingTracker> {
         // fontFamily: 'Inter',
         useMaterial3: true,
         primaryColor: Colors.lightBlue,
-        scaffoldBackgroundColor: const Color(0xfff4f4f4),
-        cardTheme: const CardTheme(elevation: 2, color: Colors.white),
+        scaffoldBackgroundColor: Color(0xFFf0f0f0),
+        cardTheme: const CardTheme(elevation: 0, color: Colors.white),
       ),
       home: const HomeScreen(),
     );
