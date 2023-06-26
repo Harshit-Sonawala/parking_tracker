@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './user_screen.dart';
+import './admin_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -30,7 +31,11 @@ class _HomeScreenState extends State<HomeScreen> {
               Card(
                 color: Colors.deepOrange,
                 child: InkWell(
-                  onTap: () => {},
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const AdminScreen(),
+                    ),
+                  ),
                   child: const Padding(
                     padding: EdgeInsets.all(20.0),
                     child: Column(

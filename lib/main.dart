@@ -19,10 +19,11 @@ class _ParkingTrackerState extends State<ParkingTracker> {
       debugShowCheckedModeBanner: false,
       title: 'Parking Tracker',
       theme: ThemeData(
-        fontFamily: 'Inter',
+        // fontFamily: 'Inter',
         useMaterial3: true,
         primaryColor: Colors.lightBlue,
         scaffoldBackgroundColor: const Color(0xfff4f4f4),
+        cardTheme: const CardTheme(elevation: 2, color: Colors.white),
       ),
       home: const HomeScreen(),
     );
