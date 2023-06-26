@@ -30,6 +30,41 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   padding: const EdgeInsets.symmetric(vertical: 50.0, horizontal: 10.0),
                   child: Column(
                     children: [
+                      Container(
+                        height: 100,
+                        width: 100,
+                        padding: const EdgeInsets.all(5),
+                        decoration: BoxDecoration(
+                          color: Colors.transparent,
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(
+                            color: Theme.of(context).primaryColor,
+                            width: 5.0,
+                            style: BorderStyle.solid,
+                          ),
+                        ),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Theme.of(context).primaryColor,
+                            border: Border.all(
+                              color: Theme.of(context).primaryColor,
+                              width: 5.0,
+                              style: BorderStyle.solid,
+                            ),
+                          ),
+                          child: const Center(
+                            child: Text(
+                              'P',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 54,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 10),
                       Text(
                         'Parking Tracker',
                         style: TextStyle(
